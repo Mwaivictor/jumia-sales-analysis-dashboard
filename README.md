@@ -168,14 +168,14 @@ The correlation between discount % and review count is **slightly negative (r �
 - **Top 10 product performance** combining discount %, rating, reviews, and the Performance Score
 
 **Charts (on the DASHBOARD sheet, plus working copies on the other sheets):**
-- **Discount % vs Reviews Correlation** — scatter chart (trend analysis)
-- **Rating vs Reviews Correlation** — scatter chart (trend analysis)
-- **Top 10 Product Performance** — bar chart from the Performance Score pivot
-- **Product Count by Discount %** — pie chart showing the High/Medium/Low split
-- **Ranking by Product Rating** — bar chart of the best- and worst-rated products
+- **Discount % vs Reviews Correlation** - scatter chart (trend analysis)
+- **Rating vs Reviews Correlation** - scatter chart (trend analysis)
+- **Top 10 Product Performance** - bar chart from the Performance Score pivot
+- **Product Count by Discount %** - pie chart showing the High/Medium/Low split
+- **Ranking by Product Rating** - bar chart of the best- and worst-rated products
 - A 3D bar chart and additional pie/bar charts on the PIVOT sheet supporting the category breakdowns
 
-**Slicers (interactive filters):** two slicers connected to the pivot tables —
+**Slicers (interactive filters):** two slicers connected to the pivot tables
 - `Discount_category` (Low / Medium / High)
 - `category Rating` (Poor / Average / Excellent)
 
