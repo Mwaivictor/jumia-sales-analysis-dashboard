@@ -2,7 +2,7 @@
 
 ## 1. Project Overview
 
-This is my **first-ever Excel data analysis and dashboard project**. I worked with a dataset of products scraped from **Jumia Kenya** (one of East Africa's largest e-commerce platforms) and used Excel to clean the data, enrich it with calculated fields, analyze it with pivot tables, and present the results in an interactive dashboard.
+This is my **first-ever Excel data analysis and dashboard project**. I worked with a Sample of a dataset of products scraped from **Jumia Kenya** and used Excel to clean the data, enrich it with calculated fields, analyze it with pivot tables, and present the results in an interactive dashboard.
 
 The goal of the project was to answer three business questions:
 
@@ -45,9 +45,8 @@ This was the most time-consuming part and taught me the most. Here is what I cle
 
 **Missing values.** The dataset has genuine gaps that I documented rather than deleted:
 - **52 products have no reviews or ratings** — these are simply products no customer has reviewed yet on Jumia. I kept them for the pricing/discount analysis but excluded them from rating and review calculations (Excel's `AVERAGE` ignores blanks automatically).
-- **3 rows are missing the product name** but still have valid price and discount data.
 
-**Duplicates.** After cleaning, I checked the data block and found **no duplicate product rows** — each of the ~110 products appears once.
+**Duplicates.** After cleaning, I checked and removed the duplicated both true and false duplicates
 
 ## 4. Feature Engineering
 
@@ -58,7 +57,7 @@ I added several calculated columns to enrich the dataset:
 = Old price − Current price
 ```
 
-**Discount percentage (`Abs_Disc(%)` and a rounded `Discount` column)**:
+**Discount percentage (`Abs_Disc(%)` used to confirm whether the existing percentage was the same**:
 ```
 = (Old price − Current price) / Old price
 ```
@@ -71,7 +70,6 @@ I added several calculated columns to enrich the dataset:
 | AVERAGE | 3 ≤ rating < 4.5 | 22 |
 | EXCELLENT | rating ≥ 4.5 | 23 |
 
-*Known limitation:* my formula assigns "EXCELLENT" to the 52 unrated products by default (the IF falls through when the rating cell is blank). In the insights below I only use the **rated** products for rating-based conclusions. This is a bug I'd fix in version 2 by adding a "NOT RATED" branch first.
 
 **Discount categories (`Discount_category`)** — nested IF on the discount percentage:
 
@@ -116,9 +114,9 @@ Computed with `AVERAGE`, `MAX`, `MIN`, `INDEX/MATCH` and `COUNT` in the KPI bloc
 | MEDIUM (20–40%) | **15.9** | **4.25** |
 | HIGH (>40%) | 10.8 | 3.66 |
 
-The correlation between discount % and review count is **slightly negative (r ≈ −0.13)**. So **higher discounts do NOT lead to more engagement** — medium-discount products actually get the most reviews AND the best ratings, while heavily discounted products get fewer reviews and worse ratings.
+The correlation between discount % and review count is **slightly negative (r ≈ −0.13)**. So **higher discounts do NOT lead to more engagement** medium-discount products actually get the most reviews AND the best ratings, while heavily discounted products get fewer reviews and worse ratings.
 
-**Rating vs Reviews:** the correlation is **essentially zero (r ≈ +0.06)**. Highly rated products do not automatically get more reviews. In fact, the single most-reviewed product in the dataset (69 reviews) has a poor 2.8 rating — unhappy customers leave reviews too. Review count measures *attention*, not *satisfaction*.
+**Rating vs Reviews:** the correlation is **essentially zero (r ≈ +0.06)**. Highly rated products do not automatically get more reviews. In fact, the single most-reviewed product in the dataset (69 reviews) has a poor 2.8 rating unhappy customers leave reviews too. Review count measures *attention*, not *satisfaction*.
 
 ### C. Product Performance
 
@@ -206,10 +204,9 @@ As my first Excel project, this taught me far more than I expected:
 - **Cleaning is most of the job.** Currency prefixes, parentheses turning numbers negative, and ratings stored as sentences all had to be fixed before a single chart could be made.
 - **Categories make messy data readable.** Bucketing discounts and ratings with nested IFs turned 110 scattered rows into clear groups I could pivot on.
 - **Pivot tables + slicers are powerful.** Ten pivot tables and two slicers did the heavy lifting for every ranking and breakdown in the dashboard.
-- **Always question your own formulas.** My rating-category IF silently labelled blank ratings "EXCELLENT" — finding and documenting that bug was as valuable as any insight.
+- **Always question your own formulas.** My rating-category IF silently labelled blank ratings "EXCELLENT" finding and documenting that bug was as valuable as any insight which was solved by using an 'IF' statemenmt to check whether he reference cell was blank.
 - **Correlation can surprise you.** I assumed bigger discounts would mean more engagement; the data showed the opposite.
 
-Next steps for version 2: fix the blank-rating bug, add a proper product-category column, and pull a larger sample so the review-based insights are more robust.
+Next steps: Learn on how to make insightful and presentable dashboards that needs to be polished and also work with much larger datasets.
 
----
 *Tools used: Microsoft Excel (formulas, nested IFs, ABS, AVERAGE/MAX/MIN, pivot tables, slicers, scatter/bar/pie charts). Data: scraped from Jumia Kenya. Prices in Kenyan Shillings (KSh).*
