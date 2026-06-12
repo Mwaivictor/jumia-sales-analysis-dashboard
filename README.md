@@ -150,7 +150,7 @@ The correlation between discount % and review count is **slightly negative (r �
 | 52 Pieces Cake Decorating Set | 20 | 4.1 |
 | 53 Pcs Yarn Crochet Hooks (Fortune Cat) | 20 | 4.7 |
 
-**Top 5 highest-rated products** (all 5.0/5, each with only 1–3 reviews): Anti-Skid Absorbent Coaster, Peacock Throw Pillow Case, LASA Aluminum Folding Hand Cart, DIY File Folder Desktop Organizer, Classic Black Cat Pillow Case.
+**Top 5 highest-rated products** (all 5.0/5, each with only 1-3 reviews): Anti-Skid Absorbent Coaster, Peacock Throw Pillow Case, LASA Aluminum Folding Hand Cart, DIY File Folder Desktop Organizer, Classic Black Cat Pillow Case.
 
 **Top 5 lowest-rated products:** Wall-mounted Plug Fixer (2.0), 5-PCS Stainless Steel Cooking Pot Set (2.1), Electric LED UV Mosquito Killer Lamp (2.1), Artificial Potted Flowers (2.2), 7-piece Travel Storage Bag Set (2.2).
 
@@ -193,9 +193,9 @@ Clicking a slicer button filters the connected pivot tables and their charts at 
 
 **5. The "old price" looks inflated as a marketing tactic.** The average discount is a steep 36.7%, and 55% of all products carry a "high" discount of 40%+. When more than half the catalogue is permanently 40% off, the strikethrough price is likely an anchor to make deals look bigger, rather than a real previous price.
 
-**6. Craft & kitchen products quietly perform best.** Although the dataset has no formal category column, the product names show a pattern: crochet/knitting sets and cake-decorating kits dominate the high-engagement, high-rating zone (4 of the top 10 most-reviewed products are crochet sets rated 4.5–4.7; both cake-decorating sets are also in the top 10). Hobby and baking products appear to be a strong niche on Jumia.
+**6. Craft & kitchen products quietly perform best.** Although the dataset has no formal category column, the product names show a pattern: crochet/knitting sets and cake-decorating kits dominate the high-engagement, high-rating zone (4 of the top 10 most-reviewed products are crochet sets rated 4.5-4.7; both cake-decorating sets are also in the top 10). Hobby and baking products appear to be a strong niche on Jumia.
 
-**7. Data caveat:** ratings exist for only 58 of 110 products, and several "5.0★" products have just 1–3 reviews, so single ratings can dominate. These insights describe this sample, not all of Jumia.
+**7. Data caveat:** ratings exist for only 58 of 110 products, and several "5.0" products have just 1-3 reviews, so single ratings can dominate. These insights describe this sample, not all of Jumia.
 
 ## 8. Conclusion
 
