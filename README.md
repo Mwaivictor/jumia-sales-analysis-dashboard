@@ -185,9 +185,9 @@ Clicking a slicer button filters the connected pivot tables and their charts at 
 
 **1. Higher discounts do NOT increase customer engagement.** The discount-to-reviews correlation is slightly negative (r ≈ −0.13). The sweet spot is the **medium tier (20–40% off)**: those products average 15.9 reviews and a 4.25 rating, beating both the low tier (9.5 reviews) and the high tier (10.8 reviews, 3.66 rating).
 
-**2. Heavy discounting often signals a weak product.** Of the rated products, **10 combine a high discount (>40%) with a poor rating (<3)** — e.g., the 5-PCS Cooking Pot Set (55% off, 2.1★) and the 120W Vacuum Cleaner (49% off, 2.8★). Big markdowns on Jumia frequently look like attempts to clear products customers don't like. Meanwhile only **one** product pairs a low discount with an excellent rating (the LED Digital Alarm Clock, 19% off, 4.6★) — good products don't need to be slashed.
+**2. Heavy discounting often signals a weak product.** Of the rated products, **10 combine a high discount (>40%) with a poor rating (<3)** e.g., the 5-PCS Cooking Pot Set (55% off, 2.1★) and the 120W Vacuum Cleaner (49% off, 2.8★). Big markdowns on Jumia frequently look like attempts to clear products customers don't like. Meanwhile only **one** product pairs a low discount with an excellent rating (the LED Digital Alarm Clock, 19% off, 4.6★) good products don't need to be slashed.
 
-**3. Ratings don't drive review volume.** The rating-to-reviews correlation is ≈ 0. The most-reviewed product (69 reviews) is also one of the worst-rated (2.8★). Reviews measure how many people *bought and reacted* — not whether they were happy.
+**3. Ratings don't drive review volume.** The rating-to-reviews correlation is ≈ 0. The most-reviewed product (69 reviews) is also one of the worst-rated (2.8★). Reviews measure how many people *bought and reacted* not whether they were happy.
 
 **4. Poorly-rated products are the cheap ones.** Among rated products, POOR items average **KSh 998**, vs ~**KSh 1,370–1,400** for AVERAGE and EXCELLENT items. The very cheapest products in this segment tend to disappoint, while quality holds steady once you pass roughly KSh 1,300.
 
