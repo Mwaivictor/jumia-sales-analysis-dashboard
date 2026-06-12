@@ -1,4 +1,3 @@
- Jumia Product Performance Dashboard
 ### Analyzing Pricing, Discounts, and Customer Reviews
 
 ## 1. Project Overview
