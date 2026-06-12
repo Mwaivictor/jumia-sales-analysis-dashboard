@@ -44,7 +44,7 @@ This was the most time-consuming part and taught me the most. Here is what I cle
 **Rating standardization.** Ratings came in as text strings like `"4.5 out of 5"`, which can't be averaged or charted. I extracted the numeric part into a new `Abs_rating` column (e.g., `4.5 out of 5` → `4.5`), giving ratings on a clean 0–5 scale.
 
 **Missing values.** The dataset has genuine gaps that I documented rather than deleted:
-- **52 products have no reviews or ratings** — these are simply products no customer has reviewed yet on Jumia. I kept them for the pricing/discount analysis but excluded them from rating and review calculations (Excel's `AVERAGE` ignores blanks automatically).
+- **52 products have no reviews or ratings** - these are simply products no customer has reviewed yet on Jumia. I kept them for the pricing/discount analysis but excluded them from rating and review calculations (Excel's `AVERAGE` ignores blanks automatically).
 
 **Duplicates.** After cleaning, I checked and removed the duplicated both true and false duplicates
 
