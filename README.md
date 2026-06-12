@@ -31,7 +31,7 @@ The dataset contains **~110 home & lifestyle products** (kitchenware, storage, c
 | `Review` | Number of customer reviews | scraped as `(24)` → imported as `-24` |
 | `Rating` | Customer rating | text like `"4.6 out of 5"` |
 
-A note on the data: prices range from **KSh 38 to KSh 3,750**, so this is a budget/mid-range household goods segment. Only about half the products (**58 of ~110**) have any reviews at all — a real-world data limitation I had to work around throughout the project.
+A note on the data: prices range from **KSh 38 to KSh 3,750**, so this is a budget/mid-range household goods segment. Only about half the products (**58 of ~110**) have any reviews at all a real-world data limitation I had to work around throughout the project.
 
 ## 3. Data Cleaning & Preparation
 
@@ -52,7 +52,7 @@ This was the most time-consuming part and taught me the most. Here is what I cle
 
 I added several calculated columns to enrich the dataset:
 
-**Discount amount (`Abs_dicount`)** — the absolute saving in shillings:
+**Discount amount (`Abs_dicount`)** - the absolute saving in shillings:
 ```
 = Old price − Current price
 ```
@@ -62,7 +62,7 @@ I added several calculated columns to enrich the dataset:
 = (Old price − Current price) / Old price
 ```
 
-**Rating categories (`category Rating`)** — built with a nested IF on the cleaned rating:
+**Rating categories (`category Rating`)** - built with a nested IF on the cleaned rating:
 
 | Category | Rule | Count (rated products) |
 |---|---|---|
@@ -79,7 +79,7 @@ I added several calculated columns to enrich the dataset:
 | MEDIUM_DISCOUNT | 20–39% | 31 |
 | HIGH_DISCOUNT | ≥ 40% | 60 |
 
-**Performance Score** — a custom weighted score I built to rank products on more than one dimension at a time:
+**Performance Score** - a custom weighted score I built to rank products on more than one dimension at a time:
 ```
 = 0.40 × Reviews + 0.35 × Rating + 0.25 × Discount %
 ```
