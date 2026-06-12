@@ -209,4 +209,4 @@ As my first Excel project, this taught me far more than I expected:
 
 Next steps: Learn on how to make insightful and presentable dashboards that needs to be polished and also work with much larger datasets.
 
-*Tools used: Microsoft Excel (formulas, nested IFs, ABS, AVERAGE/MAX/MIN, pivot tables, slicers, scatter/bar/pie charts). Data: scraped from Jumia Kenya. Prices in Kenyan Shillings (KSh).*
+*Tools used: Microsoft Excel (formulas, nested IFs, ABS, XLOOKUP,AVERAGE/MAX/MIN, pivot tables, slicers, scatter/bar/pie charts). Data: scraped from Jumia Kenya. Prices in Kenyan Shillings (KSh).*
